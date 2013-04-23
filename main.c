@@ -7,7 +7,7 @@
 int main(){
  
   float h = 0.01;
-  int n_pasos = ((3.0 + h)/h);
+  int n_pasos = ((30.0 + h)/h);
   float* x;
   float* y;
   float* z;
