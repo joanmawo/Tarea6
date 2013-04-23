@@ -4,7 +4,7 @@
 #include "funciones.h"
 
 
-void rungeKuttaCuartoOrden(float *x, float *y, float *z, float h, int n_pasos, float condX, float condY, float condZ, float b, float r, float s){
+void rungeKuttaCuartoOrden(float *x, float *y, float *z, float *t, float h, int n_pasos, float condX, float condY, float condZ, float b, float r, float s){
   
 //Condiciones iniciales
  x[0] = condX;
@@ -18,9 +18,9 @@ void rungeKuttaCuartoOrden(float *x, float *y, float *z, float h, int n_pasos, f
   float k3_x, k3_y, k3_z;
   float k4_x, k4_y, k4_z;
   float promedio_k_x, promedio_k_y, promedio_k_z;
-  float x1;
-  float x2;
-  float x3;
+  float x1, t1;
+  float x2, t2;
+  float x3, t3;
   float y1, z1;
   float y2, z2;
   float y3, z3;
@@ -75,4 +75,5 @@ void rungeKuttaCuartoOrden(float *x, float *y, float *z, float h, int n_pasos, f
   y[i] = y[i-1] + h*promedio_k_y;
   z[i] = z[i-1] + h*promedio_k_z;
  
+}
 }

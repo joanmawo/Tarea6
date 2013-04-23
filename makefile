@@ -5,10 +5,10 @@ a.out: main.o runge.o funciones.o
 
 
 main.o: main.c
-	@cc -c main.c
+	@cc -c -lm main.c
 
 runge.o: runge.c 
-	@cc -c runge.c
+	@cc -c -lm runge.c
 
 funciones.o: funciones.c 
 	@cc -c funciones.c
