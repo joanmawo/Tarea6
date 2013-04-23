@@ -1,5 +1,5 @@
-a.out: main.o runge.o
-	@cc main.o runge.o
+a.out: main.o runge.o funciones.o 
+	@cc main.o runge.o funciones.o
 	@./a.out
 	@python graficador.py
 
@@ -9,6 +9,9 @@ main.o: main.c
 
 runge.o: runge.c 
 	@cc -c runge.c
+
+funciones.o: funciones.c 
+	@cc -c funciones.c
 
 all: a.out
 
