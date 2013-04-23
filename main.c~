@@ -25,10 +25,10 @@ int main(){
   t = malloc(n_pasos*sizeof(float));
   x = malloc(n_pasos*sizeof(float));
   y = malloc(n_pasos*sizeof(float));
-  z = malloc(n_pasos*sizeof(float));
+  y = malloc(n_pasos*sizeof(float));
 
 
-  if(!t || !x || !y || !z){
+  if(!t || !x || !y_1 || !y_2){
     printf("Problema con memoria");
     exit(1);
   }

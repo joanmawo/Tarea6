@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-#include <funciones.h>
-
+#include <f_prima_1.h>
+#include <f_prima_2.h>
 
 void rungeKuttaCuartoOrden(float *x, float *y, float *z, float h, int n_pasos, float condX, float condY, float condZ, float b, float r, float s){
   //Condiciones iniciales
