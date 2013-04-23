@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-#include <funciones.h>
+#include "funciones.h"
 
 
 void rungeKuttaCuartoOrden(float *x, float *y, float *z, float h, int n_pasos, float condX, float condY, float condZ, float b, float r, float s){
-  //Condiciones iniciales
+  
+//Condiciones iniciales
  x[0] = condX;
  y[0] = condY;
  z[0] = condZ;
